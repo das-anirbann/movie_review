@@ -12,7 +12,7 @@ public class ReviewService {
     @Autowired
     private ReviewRepository reviewRepository;
 
-
+    @Autowired
     private MongoTemplate mongoTemplate;
 
     public Reviews createReview(String reviewBody, String imdbId){

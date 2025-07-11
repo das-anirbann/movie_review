@@ -19,7 +19,7 @@ public class ReviewController {
 
     @PostMapping
     public ResponseEntity<Reviews> createReview(@RequestBody Map<String, String> payload){
-                   return new ResponseEntity<Reviews>(reviewService.createReview(payload.get("reviewbody"), payload.get("imdbId")), HttpStatus.CREATED);
+                   return new ResponseEntity<Reviews>(reviewService.createReview(payload.get("reviewBody"), payload.get("imdbId")), HttpStatus.CREATED);
 
     }
 }
